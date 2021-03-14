@@ -103,7 +103,7 @@ export class PiechartComponent implements OnInit {
       .text((d) => d.data.name.replace(/_/g, ' ') + ' (' + d.data.value + ') ')
       .style('text-transform', 'Capitalize')
       .style('font-size', 12)
-      .style('fill', 'black');
+      .style('fill', 'white');
 
   }
 
@@ -151,7 +151,7 @@ export class PiechartComponent implements OnInit {
   labelHighlight() {
     const parent = this;
     this.g.on('mouseover', function (d, i) {
-      d3.select(this).select('path').style('stroke', 'white').style('stroke-width', '2');
+      d3.select(this).select('path').style('stroke', 'black').style('stroke-width', '2');
       d3.select(this).select('text').style('fill', 'gray');
       d3.select(this).select('polyline').style('stroke', 'gray')
     }).on('mouseout', function (d, i) {

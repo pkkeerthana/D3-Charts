@@ -56,5 +56,32 @@ export const linedata:any[] = [
 ];
 
 export const bardata:any[] = [
-   
+   {
+       date: new Date(2021,1,18,9,48,49),
+       mins:0.583,
+       width:'0.583px',
+       color:"rgb(4,4,253,0.736)",
+       end:new Date(2021,1,18,9,49,24)
+   },
+   {
+        date: new Date(2021,1,18,9,49,51),
+        mins:7.66,
+        width:'7.66px',
+        color:"rgb(4,4,253,0.736)",
+        end:new Date(2021,1,18,9,50,37)
+   },
+   {
+        date: new Date(2021,1,18,9,51,12),
+        mins:4.15,
+        width:'4.15px',
+        color:"rgb(4,4,253,0.736)",
+        end:new Date(2021,1,18,9,52,21)
+   },
+   {
+        date: new Date(2021,1,18,9,52,51),
+        mins:0.8,
+        width:'0.8px',
+        color:"rgb(4,4,253,0.736)",
+        end:new Date(2021,1,18,9,53,39)
+  }
 ];

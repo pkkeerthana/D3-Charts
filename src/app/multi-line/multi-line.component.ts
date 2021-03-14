@@ -214,11 +214,15 @@ export class MultiLineComponent implements OnInit {
 
     this.focus.append('g')
       .attr('class', 'axis axis--x')
+      .style('fill','white')
+      .style('stroke','white')
       .attr('transform', 'translate(0,' + this.height + ')')
       .call(this.xAxis);
 
     this.focus.append('g')
       .attr('class', 'axis axis--y')
+      .style('fill','white')
+      .style('stroke','white')
       .call(this.yAxis)
       .append('text')
       .attr('class', 'axis-title')
@@ -227,10 +231,12 @@ export class MultiLineComponent implements OnInit {
       .attr('dy', '-3.5em')
       .attr('fill','blue')
       .attr('text-anchor', 'end')
-      .text('Google Users & Temp Users');
+      .text('line1 & line2');
 
     this.focus.append('g')
       .attr('class', 'axis axis--y3')
+      .style('fill','white')
+      .style('stroke','white')
       .attr('transform', 'translate(' + this.width + ',0)')
       .call(this.yAxis3)
       .append('text')
@@ -240,7 +246,7 @@ export class MultiLineComponent implements OnInit {
       .attr('dy', '3.5em')
       .attr('fill','blue')
       .attr('text-anchor', 'end')
-      .text('Users');
+      .text('line3');
 
     this.context.append('g')
       .attr('class', 'axis axis--x')
